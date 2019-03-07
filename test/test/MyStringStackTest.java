@@ -135,6 +135,7 @@ public class MyStringStackTest extends TestCase {
             o1 = stack.pop ();  assertSame (s1, o1);
         } catch (NoSuchElementException e) {  fail ();  }
         assertTrue (stack.isEmpty());
+		fail("Force failure to test Jenkins");
 	}
 	
 	public static junit.framework.Test suite() {
